@@ -1,4 +1,3 @@
-#include "monty.h"
 #ifndef MONTY_H
 #define MONTY_H
 #include <stdio.h>
@@ -9,12 +8,6 @@
 #include <string.h>
 #include <ctype.h>
 /**
- * f_mul - multiplies the top two elements of the stack.
- * @head: stack head
- * @counter: line_number
- * Return: no return
-*/
-void f_mul(stack_t **head, unsigned int counter)
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
  * @prev: points to the previous element of the stack (or queue)
@@ -22,32 +15,9 @@ void f_mul(stack_t **head, unsigned int counter)
  *
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
- *
+ */
 typedef struct stack_s
 {
-	stack_t *h;
-	int len = 0, aux;
-
-	h = *head;
-	while (h)
-	{
-		h = h->next;
-		len++;
-	}
-	if (len < 2)
-	{
-		fprintf(stderr, "L%d: can't mul, stack too short\n", counter);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*head);
-		exit(EXIT_FAILURE);
-	}
-	h = *head;
-	aux = h->next->n * h->n;
-	h->next->n = aux;
-	*head = h->next;
-	free(h);
-}
 	int n;
 	struct stack_s *prev;
 	struct stack_s *next;
@@ -105,4 +75,5 @@ void addnode(stack_t **head, int n);
 void addqueue(stack_t **head, int n);
 void f_queue(stack_t **head, unsigned int counter);
 void f_stack(stack_t **head, unsigned int counter);
+
 #endif
