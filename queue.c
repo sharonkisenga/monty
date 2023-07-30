@@ -2,7 +2,7 @@
 /**
  * f_queue - prints the top
  * @head: stack head
- * @counter: line_number
+ * @counter: line_numbe
  * Return: no return
 */
 void f_queue(stack_t **head, unsigned int counter)

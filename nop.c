@@ -2,7 +2,7 @@
 /**
   *f_nop- nothing
   *@head: stack head
-  *@counter: line_number
+  *@counter: line_numbe
   *Return: no return
  */
 void f_nop(stack_t **head, unsigned int counter)

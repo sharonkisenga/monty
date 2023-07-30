@@ -2,7 +2,7 @@
 /**
   *f_sub- sustration
   *@head: stack head
-  *@counter: line_number
+  *@counter: line_numbe
   *Return: no return
  */
 void f_sub(stack_t **head, unsigned int counter)
